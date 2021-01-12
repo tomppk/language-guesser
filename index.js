@@ -10,11 +10,7 @@ try {
     // Return language object with .name property for full name.
     const langObject = langs.where("3", `${langCode}`);
 
-    console.log(langObject.name.green);
+    console.log(`>>> ${langObject.name}`.green);
 } catch (e) {
     console.log("Could not match a language Please try again with a larger sample.".red)
 }
-
-
-
-
